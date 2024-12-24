@@ -1,0 +1,21 @@
+//객체순회방법
+const person={
+    name:"홍길동",
+    age: 28,
+    tall: 180
+};
+
+console.log(person.name);
+console.log(person["name"]);
+
+
+//객체에서 멤버변수의 이름을 배열로 가져오기
+const personKey=Object.keys(person);
+const personValue=Object.values(person);
+console.log(personKey);
+console.log(personValue);
+//반복문을 객체값에 모든 원소값을 출력한다
+for(let i=0; i<personKey.length; i++){
+    let key=personKey[i];
+    console.log(person[key]);
+}

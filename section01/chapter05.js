@@ -9,6 +9,15 @@ function checkMood(mood){
         dance();
     }
 }
+function checkMood2(mood, goodCallback, badCallback){
+    if(mood==="good"){
+        goodCallback();
+    }else{
+        badCallback();
+    }
+}
+
+checkMood2("good", sing, cry);
 
 function sing(){
     console.log("ACTION :: sing");
